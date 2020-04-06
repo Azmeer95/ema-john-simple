@@ -1,5 +1,9 @@
 import React from 'react';
 import './Product.css';
+// Using font awesome in reactJS style.   
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+
 // Passing dynamic data to product component
 const Product = (props) => {
     console.log(props);
@@ -17,6 +21,7 @@ const Product = (props) => {
                 <p>${price}</p>
                 <br/>
                 <p><small>Only {stock} left in stock - order soon</small></p>
+                <button className="main-btn"><FontAwesomeIcon icon={faShoppingCart} />add to cart</button>
             </div>
         </div>
     );

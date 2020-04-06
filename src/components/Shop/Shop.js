@@ -8,6 +8,12 @@ const Shop = () => {
     // Fake data loaded 
     const first10 = fakeData.slice(0,10);
     const [products, setProducts] = useState(first10);
+    // State jekhane, event handler shekhane add korba
+    const handleAddProduct = () => {
+        console.log("Added");
+    }
+
+
     return (
         <div className="shop-container">
             <div className="product-container">
